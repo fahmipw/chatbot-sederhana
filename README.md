@@ -1,7 +1,7 @@
 🚀 Cara Menjalankan Aplikasi
 1. Clone Repository
  
-    `git clone https://github.com/username/chatbot-gemini.git`
+    `git clone https://github.com/username/chatbot-sederhana.git`
  
     `cd chatbot-sederhana`
 
