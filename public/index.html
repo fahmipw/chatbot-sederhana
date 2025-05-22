@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot</title>
+  <style>
+    /* Mengatur gaya dasar dan latar belakang */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    /* Container utama untuk chatbot */
+    .chat-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Judul halaman */
+    h1 {
+      font-size: 24px;
+      color: #5a5a5a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Area pesan chat */
+    #messages {
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fafafa;
+      margin-bottom: 20px;
+    }
+
+    /* Gaya pesan */
+    .message {
+      margin: 8px 0;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .user {
+      background-color: #e1f5fe;
+      color: #0277bd;
+      text-align: right;
+    }
+
+    .bot {
+      background-color: #d1c4e9;
+      color: #5e35b1;
+      text-align: left;
+    }
+
+    /* Gaya form input dan button */
+    #chat-form {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+    }
+
+    #user-input {
+      width: calc(100% - 100px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #5e35b1;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #512da8;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Chatbot Gemini</h1>
+    <div id="messages"></div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Tulis pesan..." autocomplete="off" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
