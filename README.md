@@ -3,7 +3,7 @@
  
     `git clone https://github.com/username/chatbot-gemini.git`
  
-    `cd chatbot-gemini`
+    `cd chatbot-sederhana`
 
 
 2. Install Dependencies
